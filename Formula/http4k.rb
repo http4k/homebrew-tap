@@ -1,8 +1,8 @@
 class Http4k < Formula
   desc "Functional HTTP toolkit implemented in pure Kotlin"
   homepage "https://http4k.org"
-  url "https://github.com/http4k/toolbox-cli/releases/download/v0.7.0/http4k-toolbox-0.7.0.zip"
-  sha256 "67e9994ffb0c89ad350884871c7000c7a7403e3e8c690266d61303265574e0f6"
+  url "https://github.com/http4k/toolbox-cli/releases/download/v0.8.0/http4k-toolbox-0.8.0.zip"
+  sha256 "7a7ef7217ef9e59d378904a094347e40c1240fb08579ee4939609794ee7bfb79"
 
   bottle :unneeded
 
