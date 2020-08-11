@@ -14,7 +14,7 @@ jobs:
         uses: actions-ecosystem/action-add-labels@v1
         with:
           github_token: ${{ secrets.MERGE_TOKEN }}
-            labels: automerge
+          labels: automerge
       - name: automerge
         uses: "pascalgn/automerge-action@4775c532c615e0491d53bc42c0893840ae7cc07a"
         env:
