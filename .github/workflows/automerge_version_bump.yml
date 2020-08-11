@@ -13,14 +13,12 @@ jobs:
       - name: add label
         uses: actions-ecosystem/action-add-labels@v1
         with:
-          github_token: ${{ secrets.MERGE_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
           labels: automerge
           number: ${{ github.event.pull_request.number }}
-        env:
-          github_token: ${{ secrets.MERGE_TOKEN }}
       - name: automerge
         uses: "pascalgn/automerge-action@4775c532c615e0491d53bc42c0893840ae7cc07a"
         env:
-          GITHUB_TOKEN: ${{ secrets.MERGE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           MERGE_DELETE_BRANCH: true
           MERGE_FILTER_AUTHOR: daviddenton
