@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo  "${{ secrets.MERGE_TOKEN }}"
+      - run: echo  "${{ secrets }}"
       - name: add label
         uses: actions-ecosystem/action-add-labels@v1
         with:
