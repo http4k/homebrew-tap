@@ -1,10 +1,8 @@
 name: automerge
 on:
-  push:
-#
-#  pull_request:
-#    types:
-#      - opened
+  pull_request:
+    types:
+      - opened
 jobs:
   automerge:
     runs-on: ubuntu-latest
