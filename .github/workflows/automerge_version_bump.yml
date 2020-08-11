@@ -1,7 +1,6 @@
 name: automerge
 on:
-  watch:
-    types: [started]
+  push:
 #  pull_request:
 #    types:
 #      - opened
