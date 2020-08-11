@@ -1,8 +1,9 @@
 name: automerge
 on:
-  pull_request:
-    types:
-      - opened
+  push:
+#  pull_request:
+#    types:
+#      - opened
 jobs:
   automerge:
     runs-on: ubuntu-latest
@@ -11,9 +12,9 @@ jobs:
       - name: add label
         uses: actions-ecosystem/action-add-labels@v1
         with:
-          github_token: ${{ secrets.MERGE_TOKEN }}
+          github_token: ${{ secrets.github_token }}
           labels: automerge
-          number: ${{ github.event.pull_request.number }}
+          number: "5"
       - name: automerge
         uses: "pascalgn/automerge-action@4775c532c615e0491d53bc42c0893840ae7cc07a"
         env:
