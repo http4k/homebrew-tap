@@ -8,10 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: automerge
-        uses: "pascalgn/automerge-action@f81beb99aef41bb55ad072857d43073fba833a98"
+        uses: "pascalgn/automerge-action@4775c532c615e0491d53bc42c0893840ae7cc07a"
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS:
           MERGE_DELETE_BRANCH: true
           MERGE_FILTER_AUTHOR: daviddenton
-          
