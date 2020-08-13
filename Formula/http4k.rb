@@ -21,4 +21,3 @@ class Http4k < Formula
     assert_match /http4k CLI.*/, shell_output("#{bin}/http4k --version")
   end
 end
-
