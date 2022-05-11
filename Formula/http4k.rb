@@ -4,8 +4,6 @@ class Http4k < Formula
   url "https://github.com/http4k/toolbox-cli/releases/download/v4.0.0.0/http4k-toolbox-4.0.0.0.zip"
   sha256 "5babc171cf8070ec798ab32853dd6ff77f29b066a4ee45868d171d5d22ec6358"
 
-  bottle :unneeded
-
   depends_on "openjdk"
 
   def install
