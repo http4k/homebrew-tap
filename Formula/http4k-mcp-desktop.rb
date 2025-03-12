@@ -1,7 +1,7 @@
 class Http4kMcpDesktop < Formula
   desc "Desktop client for http4k Management Control Plane"
   homepage "https://http4k.org"
-  version "6.1.0.0"
+  version "6.1.0.1"
 
   on_macos do
     if Hardware::CPU.arm?
