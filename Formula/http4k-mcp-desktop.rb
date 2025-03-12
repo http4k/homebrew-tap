@@ -4,15 +4,20 @@ class Http4kMcpDesktop < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/http4k/http4k-mcp-desktop/releases/download/v6.1.0.1/http4k-mcp-desktop-6.1.0.1.zip"
+      url "https://github.com/http4k/http4k-mcp-desktop/releases/download/v6.1.0.1/http4k-mcp-desktop-macos-x86_64"
       sha256 "REPLACE_WITH_ARM_SHA256"
     else
-      url "https://github.com/http4k/http4k-mcp-desktop/releases/download/v6.1.0.1/http4k-mcp-desktop-6.1.0.1.zip"
+      url "https://github.com/http4k/http4k-mcp-desktop/releases/download/v6.1.0.1/http4k-mcp-desktop-macos-arm64"
       sha256 "REPLACE_WITH_X86_SHA256"
     end
   end
 
   def install
+    if Hardware::CPU.arm?
+      mv "http4k-mcp-desktop-macos-arm64", "http4k-mcp-desktop"
+    else
+      mv "http4k-mcp-desktop-macos-x86_64", "http4k-mcp-desktop"
+    end
     bin.install "http4k-mcp-desktop"
   end
 
