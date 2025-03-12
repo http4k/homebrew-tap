@@ -15,9 +15,9 @@ class Http4kMcpDesktop < Formula
 
   def install
     if Hardware::CPU.arm?
-      mv "http4k-mcp-desktop-macos-arm64", "http4k-mcp-desktop"
+      mv "http4k-mcp-desktop-#{version}-macos-arm64", "http4k-mcp-desktop"
     else
-      mv "http4k-mcp-desktop-macos-x86_64", "http4k-mcp-desktop"
+      mv "http4k-mcp-desktop-#{version}-macos-x86_64", "http4k-mcp-desktop"
     end
     bin.install "http4k-mcp-desktop"
   end
