@@ -1,14 +1,14 @@
 class Http4kMcpDesktop < Formula
   desc "Desktop client for http4k Management Control Plane"
   homepage "https://http4k.org"
-  version "6.1.0.1"
+  version "6.1.0.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/http4k/mcp-desktop/releases/download/v#{version}/http4k-mcp-desktop-#{version}-macos-arm64"
+      url "https://github.com/http4k/mcp-desktop/releases/download/#{version}/http4k-mcp-desktop-#{version}-macos-arm64"
       sha256 "REPLACE_WITH_ARM_SHA256"
     else
-      url "https://github.com/http4k/mcp-desktop/releases/download/v#{version}/http4k-mcp-desktop-#{version}-macos-x86_64"
+      url "https://github.com/http4k/mcp-desktop/releases/download/#{version}/http4k-mcp-desktop-#{version}-macos-x86_64"
       sha256 "REPLACE_WITH_X86_SHA256"
     end
   end
