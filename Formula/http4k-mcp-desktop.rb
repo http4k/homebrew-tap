@@ -8,7 +8,7 @@ class Http4kMcpDesktop < Formula
   end
 
   def install
-    mv "http4k-mcp-desktop.macos-x86_64", "http4k-mcp-desktop"
+    mv "http4k-mcp-desktop.macos-arm64", "http4k-mcp-desktop"
     bin.install "http4k-mcp-desktop"
   end
 
