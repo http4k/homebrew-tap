@@ -1,7 +1,7 @@
 class Http4kMcpDesktop < Formula
   desc "http4k MCP Desktop - multi-protocol MCP client application"
   homepage "https://http4k.org"
-  version "6.1.0.1"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.arm?
