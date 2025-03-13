@@ -1,14 +1,14 @@
 class Http4kMcpDesktop < Formula
   desc "http4k MCP Desktop - multi-protocol MCP client application"
-  homepage "https://http4k.org"
+  homepage "https://mcp.http4k.org"
 
   on_macos do
-      url "https://github.com/http4k/mcp-desktop/releases/download/0.0.2/http4k-mcp-desktop-0.0.2.macos-arm64"
+      url "https://github.com/http4k/mcp-desktop/releases/download/0.0.2/http4k-mcp-desktop.macos-arm64"
       sha256 "12f31a2e0c6c91dcbace19fc6275132b929fde83e8f2927b12433f4ed8c2b8e6"
   end
 
   def install
-    mv "http4k-mcp-desktop-0.0.1.macos-x86_64", "http4k-mcp-desktop"
+    mv "http4k-mcp-desktop.macos-x86_64", "http4k-mcp-desktop"
     bin.install "http4k-mcp-desktop"
   end
 
