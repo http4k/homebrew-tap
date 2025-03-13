@@ -4,8 +4,8 @@ class Http4kMcpDesktop < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/http4k/mcp-desktop/releases/download/0.0.0/http4k-mcp-desktop-0.0.0.macos-arm64"
-      sha256 "cad4f2cb295283ca0dad605609b92a1d04b13ac3c4cc8688d8efa6be0008cf8f"
+      url "https://github.com/http4k/mcp-desktop/releases/download/0.0.1/http4k-mcp-desktop-0.0.1.macos-arm64"
+      sha256 "fcec9d84f16ca08baec9d237434d8e5330a1ddf32f3b53745aa0eac88b60454e"
     else
       url "https://github.com/http4k/mcp-desktop/releases/download/0.0.0/http4k-mcp-desktop-0.0.0.macos-x86_64"
       sha256 "aa8b35adde049a3199c853f61a1f8df5b93892f44591f279942ba8931df87e14"
