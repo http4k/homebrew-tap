@@ -3,8 +3,8 @@ class Http4kMcpDesktop < Formula
   homepage "https://mcp.http4k.org"
 
   on_macos do
-      url "https://github.com/http4k/mcp-desktop/releases/download/0.0.4/http4k-mcp-desktop.macos-arm64"
-      sha256 "5ef7eb7850a91330cdf07bfa2a7a594f8f7e457ef2b01673fe3023802fbe2038"
+      url "https://github.com/http4k/mcp-desktop/releases/download/1.0.0/http4k-mcp-desktop.macos-arm64"
+      sha256 "c685128c6e1eff33e0d228f6726c7d90744ae321fe89ae3675b5c1397e1f3e42"
   end
 
   def install
